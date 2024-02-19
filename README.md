@@ -33,6 +33,8 @@ Using Tools and Components Supported by Google and Most of the Android Developme
   width="400" hspace="10" vspace="10">
 
 
+</br></br></br>
+
 ## 👨 Developed By 
 
  <img src="https://avatars.githubusercontent.com/u/45079943?s=400&u=830726a66e22b07a8f057e4f0790711a6e106196&v=4" width="70" align="left">
