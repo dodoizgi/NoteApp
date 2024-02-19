@@ -24,13 +24,13 @@ Using Tools and Components Supported by Google and Most of the Android Developme
   width="500" hspace="10" vspace="10">
 
 <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_225952.png" align="right"
-  hspace="10" vspace="10">
+  width="500" hspace="10" vspace="10">
 
 <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230037.png" align="left"
-  hspace="10" vspace="10">
+  width="500" hspace="10" vspace="10">
 
 <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230046.png" align="right"
-  hspace="10" vspace="10">
+  width="500" hspace="10" vspace="10">
 
 
 ## 👨 Developed By 
