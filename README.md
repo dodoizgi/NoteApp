@@ -29,13 +29,13 @@ You can create, remove or edit notes with the note application. You can also sto
 ## İmages
 
 <div align="center">
-   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_225927.png" width="300" align="left"/> 
-   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_225952.png" width="300" align="right"/>
+   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_225927.png" width="400" align="left"/> 
+   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_225952.png" width="400" align="right"/>
 </div>
 
 <div align="center">
-   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230037.png" width="300" align="left"/> 
-   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230046.png" width="300" align="right"/>
+   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230037.png" width="400" align="left"/> 
+   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230046.png" width="400" align="right"/>
 </div>
 
 &nbsp;
