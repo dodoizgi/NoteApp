@@ -2,7 +2,7 @@
 
 <img src="https://img.icons8.com/clouds/100/apple-notes.png" align="left"
 width="250" hspace="10" vspace="10">
-   
+
 Note Application with Kotlin MVVM (Model - View - ViewModel) </br>Clean Architecture, Room, Beautiful Design UI</br>
 Using Tools and Components Supported by Google and Most of the Android Development Community</br></br>***Try the latest Note App APK below👇***
 
@@ -18,22 +18,30 @@ Using Tools and Components Supported by Google and Most of the Android Developme
 - [Room](https://developer.android.com/training/data-storage/room)
 - [Unit Test](https://developer.android.com/training/testing/local-tests)
 - [Ui test](https://developer.android.com/training/testing/espresso)
+  
+&nbsp;
 
+---
+## What does it do?
 
-<img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_225927.png" align="left"
-  width="400" hspace="10" vspace="10">
+You can create, remove or edit notes with the note application. You can also store them on your phone. You can add images to your notes and see them in the element of your note.</br>
 
-<img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_225952.png" align="right"
-  width="400" hspace="10" vspace="10">
+## İmages
 
-<img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230037.png" align="left"
-  width="400" hspace="10" vspace="10">
+<div align="center">
+   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_225927.png" width="485" align="left"/> 
+   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_225952.png" width="485" align="right"/>
+</div>
 
-<img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230046.png" align="right"
-  width="400" hspace="10" vspace="10"> ***
+<div align="center">
+   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230037.png" width="485" align="left"/> 
+   <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230046.png" width="485" align="right"/>
+</div>
 
+&nbsp;
 
-*** ## 👨 Developed By 
+---
+## 👨 Developed By 
 
  <img src="https://avatars.githubusercontent.com/u/45079943?s=400&u=830726a66e22b07a8f057e4f0790711a6e106196&v=4" width="70" align="left">
 
