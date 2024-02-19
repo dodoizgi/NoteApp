@@ -1,6 +1,6 @@
 # NoteApp
 
-<img src="https://img.icons8.com/clouds/100/apple-notes.png" align="left"
+<img src="https://img.icons8.com/bubbles/250/apple-notes.png" align="left"
 width="250" hspace="10" vspace="10">
 
 Note Application with Kotlin MVVM (Model - View - ViewModel) </br>Clean Architecture, Room, Beautiful Design UI</br>
