@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Başlık</string>
+    <string name="title_error">Girdiğiniz başlık geçersizdir.</string>
+    <string name="description">Açıklama</string>
+    <string name="description_error">Lütfen bir açıklama giriniz.</string>
+    <string name="url_link">Görsel Linki</string>
+    <string name="url_link_error">Girdiğiniz url geçersizdir.</string>
+    <string name="save">Kaydet</string>
+    <string name="default_edit_text_error">Zorunlu Alan</string>
+    <string name="edited">Değiştirildi</string>
+    <string name="createdDate">Oluşturulma tarihi: %s</string>
+</resources>

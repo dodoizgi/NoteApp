@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="App.Input.Title" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat_semi_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+    </style>
+
+    <style name="FormInputStyle">
+    </style>
+
+
+    <style name="TextStyleNormal" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+    </style>
+</resources>

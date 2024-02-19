@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@color/white">
+
+        <com.task.noteapp.ui.customview.AppTextView
+            android:id="@+id/textViewTitle"
+            style="@style/App.Input.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/textAreaLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/textAreaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_state_normal"
+            android:minHeight="@dimen/size_50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle">
+
+            <com.task.noteapp.ui.customview.BaseEditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="18dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center_vertical"
+                android:saveEnabled="false"
+                android:textColorHint="@color/gray_28"
+                android:textSize="@dimen/text_size_16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageEndIcon"
+                app:layout_constraintStart_toEndOf="@id/textViewPrefix"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginStart="18dp"
+                tools:ignore="Autofill,LabelFor,TextFields,SpeakableTextPresentCheck" />
+
+            <com.task.noteapp.ui.customview.AppTextView
+                android:id="@+id/textViewPrefix"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:fontFamily="@font/montserrat_light"
+                android:gravity="center_vertical"
+                android:paddingStart="18dp"
+                android:paddingEnd="3.5dp"
+                android:textSize="@dimen/text_size_16sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageClickablePrefix"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageStartIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:adjustViewBounds="true"
+                android:padding="4dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageClickablePrefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:src="@drawable/ic_core_down_arrow"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/imageStartIcon"
+                app:layout_constraintStart_toEndOf="@id/imageStartIcon"
+                app:layout_constraintTop_toTopOf="@id/imageStartIcon"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageEndIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/size_30dp"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/editText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editText"
+                tools:ignore="ContentDescription,ImageContrastCheck"
+                tools:src="@drawable/ic_core_down_arrow"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.task.noteapp.ui.customview.AppTextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/text_light_color"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/textViewError"
+            tools:ignore="TextContrastCheck"
+            tools:visibility="visible" />
+
+        <com.task.noteapp.ui.customview.AppTextView
+            android:id="@+id/textViewError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/red_4"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/textAreaLayout"
+            tools:ignore="TextContrastCheck"
+            tools:text="Error"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

@@ -1,0 +1,125 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="note"
+            type="com.task.noteapp.domain.model.Note" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_width="@dimen/size_196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/radius_10dp"
+        app:strokeColor="@color/gray_22"
+        app:strokeWidth="@dimen/size_1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivUrlImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_206dp"
+                    android:scaleType="centerCrop"
+                    app:image_error="@{@drawable/bg_notes}"
+                    app:image_placeholder="@{@drawable/bg_notes}"
+                    app:image_url="@{note.url}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/ivDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:background="@drawable/bg_delete"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:id="@+id/viewSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:background="@color/gray_2"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_8dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@{note.title}"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_10sp"
+                tools:text="Akşam hatırlatma" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_8dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="start"
+                android:maxLines="3"
+                android:text="@{note.description}"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_10sp"
+                tools:text="Kitap okuyacağım, keman çalacağım ve spora gideceğim." />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvIsChanged"
+                visible="@{note.changed}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_8dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/edited"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_10sp"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCreatedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_8dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@{String.format(@string/createdDate, note.createdDate)}"
+                android:textColor="@color/gray_17"
+                android:textSize="@dimen/text_size_9sp"
+                tools:text="Oluşturulma tarihi: 03.03.2024" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
