@@ -30,12 +30,10 @@ Using Tools and Components Supported by Google and Most of the Android Developme
   width="400" hspace="10" vspace="10">
 
 <img src="https://github.com/dodoizgi/NoteApp/blob/main/images/Screenshot_20240219_230046.png" align="right"
-  width="400" hspace="10" vspace="10">
+  width="400" hspace="10" vspace="10"> ***
 
 
-</br></br></br>
-
-## 👨 Developed By 
+*** ## 👨 Developed By 
 
  <img src="https://avatars.githubusercontent.com/u/45079943?s=400&u=830726a66e22b07a8f057e4f0790711a6e106196&v=4" width="70" align="left">
 
